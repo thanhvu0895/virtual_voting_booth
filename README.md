@@ -30,6 +30,7 @@ To run the simulation, compile and run the python file in an environment of your
 ### SIMULATION INSTRUCTIONS:
 #### Phase 1: Voting registration
 
+```
 Without starting with 0, your 9-digit social security number: 123123123
 
 Verify passed! (On failure, throw exception)
@@ -39,15 +40,16 @@ Backend: secure transfer successful!
 Backend: secure transfer successful!
 
 Thank you for submitting SSN. Your validation number:  4503143659
+```
 
 <p align="justify"> During this phase, the console will prompt the user to type a 9-digit social  
 security number (this is a simulation, don't enter your real social security  
 number!). This number cannot start with a 0. By default, the simulation registers  
 3 voters. To change this, you may change the number of voters being registered in  
 the call to registerVoter() in main() (on line 314). For example for 5 voters:  </p>
-
+```
 	registerVoter(5, voter_ssn_list)
-	
+```	
 <p align="justify"> In the sample above, the social security number was successfully signed and encrypted,   
 and the validation number was successfully encrypted. If a valid social security number   
 is submitted (it cannot be one that was entered previously), then the program will print  
@@ -62,9 +64,11 @@ An exception is thrown if a signature cannot be verified.
 
 #### Phase 2: Voting Session
 
+```
 The voting session begins now.  
 
 Please input your validation number: 4503143659
+```
 
 <p align="justify"> After all voters have registered, the voting session will begin by displaying the  
 above sample. Like phase 1, the simulation handles 1 voter at a time. Copy and   
@@ -73,7 +77,10 @@ validation number should print 1 "verify passed" message and one "secure transfe
 successful" message.  </p>
 
 SAMPLE:  
+
+```
 For ID number, input a 2-digit number from 10 to 99: 10  
+```
 
 <p align="justify"> Next an identification number must be entered. These are used so that when the   
 results are displayed, voters can easily verify that their vote was counted without  
@@ -82,23 +89,28 @@ will not accept repeat ID numbers. Submitting an identification number should pr
 1 "verify passed" message and one "secure transfer successful" message.  </p>
 
 SAMPLE:  
+```
 [ID 10], please input 1 / 01 for nominee 1 or 2 / 02 for nominee 2: 01  
-
+```
 <p align="justify"> Finally, a user casts their vote. Nominee 1 represents the Republican Party, and  
 nominee 2 represents the Democratic Party. After inputting their vote, this user  
 should see the following message:   </p>
 
+```
 Verify passed! (On failure, throw exception)  
 Backend: secure transfer successful!  
 Thank you [ID 10] for casting vote  
+```
 
 #### Phase 3: Results
 
+```
 Voting session over. We are pleased to announce that:  
 Democratic Party has won  
 ID: 10 | Vote: Republican Party  
 ID: 11 | Vote: Democratic Party  
 ID: 12 | Vote: Democratic Party  
+```
 
 <p align="justify"> After all registered voters have voted, the results are displayed. This simulates  
 a user being able to check that their vote was counted.  
