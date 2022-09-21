@@ -46,7 +46,9 @@ Thank you for submitting SSN. Your validation number:  4503143659
 security number (this is a simulation, don't enter your real social security  
 number!). This number cannot start with a 0. By default, the simulation registers  
 3 voters. To change this, you may change the number of voters being registered in  
-the call to registerVoter() in main() (on line 314). For example for 5 voters:  </p>  
+the call to registerVoter() in main() (on line 314). 
+
+For example for 5 voters:  </p>  
 
 ```
 registerVoter(5, voter_ssn_list)
